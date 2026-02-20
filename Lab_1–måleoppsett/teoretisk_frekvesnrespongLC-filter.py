@@ -11,7 +11,7 @@ C3 = 100e-9     # 100 nF
 C_tot = (C1 * (C2 + C3)) / (C1 + (C2 + C3))
 
 # Frequency range
-f = np.logspace(2, 5, 1000)  # 100 Hz to 100 kHz
+f = np.logspace(0, 5, 1000)  # 100 Hz to 100 kHz
 w = 2 * np.pi * f
 s = 1j * w
 
@@ -24,8 +24,8 @@ H_mag_db = 20 * np.log10(np.abs(H))
 # Plot
 plt.figure()
 plt.semilogx(f, H_mag_db)
-plt.xlabel("Frequency [Hz]")
-plt.ylabel("Magnitude |H(jω)| [dB]")
-plt.title("Theoretical Frequency Response of LC Low-Pass Filter")
-plt.grid(True)
+plt.xlabel("Frekvens [Hz]")
+plt.ylabel("Amplitude |H(jω)| [dB]")
+plt.title("Teoretisk frekvensresponds av LP-filteret")
+plt.grid(True, which="both")
 plt.show()
