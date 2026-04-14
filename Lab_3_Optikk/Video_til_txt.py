@@ -2,11 +2,11 @@ import cv2
 import numpy as np
 
 # Spesifiser input- og output-filer her
-inn_navn = "Nye_videoer/Test1"
-ut_navn = "Test1"
+inn_navn = "Video_puls_30sec_60bpm" 
+ut_navn = "Puls60_V2"
 
-filename = f"/Users/tordtranum/Desktop/6.semester/Sensorer/Lab/Lab_3_/Txt_målinger/Videoer/{inn_navn}.mp4"  # Endre til ønsket videofil
-output_filename = f"/Users/tordtranum/Desktop/6.semester/Sensorer/Lab/Lab_3_/Txt_målinger/{ut_navn}"  # Endre til ønsket output-fil
+filename = f"/Users/tordtranum/Desktop/6.semester/Sensorer/Lab/Lab_3_Optikk/Txt_målinger/Videoer/{inn_navn}.mp4"  # Endre til ønsket videofil
+output_filename = f"/Users/tordtranum/Desktop/6.semester/Sensorer/Lab/Lab_3_Optikk/Txt_målinger/{ut_navn}"  # Endre til ønsket output-fil
 
 # Les videoen
 cap = cv2.VideoCapture(filename, cv2.CAP_FFMPEG)
